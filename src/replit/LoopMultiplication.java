@@ -9,8 +9,8 @@ public class LoopMultiplication {
 		int num = input.nextInt();
 		
 		for(int i = 1; i <= 10; i++) {
-		int  enteredNum = 0;
-		System.out.println(enteredNum * i);
+		//int  enteredNum = input.nextInt();
+		System.out.println(num * i);
 		}
 		
 	
