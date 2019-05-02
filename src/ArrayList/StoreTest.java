@@ -11,10 +11,23 @@ public class StoreTest {
 		myStore.addItem(mouse);
 		Item pencil = new Item("Maxriter", 1.00);
 		myStore.addItem(pencil);
+		//myStore.seeInventory();
+		//System.out.println("Total number of items: " + myStore.numOfItems);
+		//System.out.println(myStore.storeItems); //shows the location of the ArrayList;
 		myStore.seeInventory();
-		System.out.println("Total number of items: " + myStore.numOfItems);
-		System.out.println(myStore.storeItems); //shows the location of the ArrayList;
 		
+		myStore.sell("Maxriter");
+		myStore.seeInventory();
+		System.out.println(myStore.totalSales);
+		
+		myStore.refund(pencil);
+		myStore.seeInventory();
+		System.out.println("Number of items left " + myStore.numOfItems);
+		
+		
+		
+		
+	
 	}
 
 }
