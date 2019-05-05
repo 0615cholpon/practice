@@ -14,6 +14,7 @@ public class ShoppingCenter {
 		
 		Item board = new Item ("white board", 10.0);
 		
+		
 		channel.checkItem("bag pack");
 		channel.checkItem("phone");
 	

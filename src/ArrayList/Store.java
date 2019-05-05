@@ -11,6 +11,7 @@ public class Store {
 	ArrayList<Item> storeItems = new ArrayList<>();
 	int numOfItems;
 	double totalSales;
+	int costOfInventory;
 	public Store(String name, String address) {
 		this.name = name;
 		this.address = address;
@@ -33,8 +34,14 @@ public class Store {
 			Item book = new Item(itemName, itemPrice);
 			storeItems.add(book);
 			numOfItems ++;
+			costOfInventory += storeItems.get(i).price;
+			
 		
 		}
+		System.out.println("Number of items " + numOfItems);
+		System.out.println("Total cost of items " + costOfInventory);
+		
+		
 	
 	}
 
