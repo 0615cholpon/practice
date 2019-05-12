@@ -10,14 +10,17 @@ public class Book {
     private static int unknownAuthors;
     
 	public static String capitalize(String word) {
-		for(int i = 0; i < word.length(); i++) {
-		word = word.substring(0, 1).toUpperCase() + 
-	word.substring(1, word.length()).toLowerCase();
-		if(word.isEmpty()){
+		word = word.toLowerCase();
+		String []wordSp = word.split(" ");
+		
+		for(int i = 0; i < wordSp.length; i++) {
+			wordSp[i] = (wordSp[i].charAt(0) + "").toUpperCase();
+		if(wordSp[i].isEmpty()){
 			return "";
 		}
 		}
-		return word;
+		return null;
+		
 		}
 	
 	public static boolean isTitleWord(String word) {
