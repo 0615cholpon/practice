@@ -1,8 +1,21 @@
 package inheritance;
 
 public class Dog extends Animal{
-String breed;
-int age;
+	
+	public static void animalStatic() {
+		System.out.println("Static method in Dog class!");
+	}
+	
+	@Override
+	public void eat() {
+		System.out.println("Dog is eating!");
+	}
 
+	@Override
+	public Dog getMother() {
+		Dog d = new Dog();
+		return d;
+
+	}
 
 }
