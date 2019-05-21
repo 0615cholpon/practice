@@ -12,7 +12,7 @@ public class NoYou {
 	
 //		message = message.replace("u", " ");
 //	// but in order to keep the original one we need to write just one more time;
-//		message = message.replace("U", "");
+		message = message.replace("U", "");
 //		System.out.println(message);
 		
 		message = message.replace("message", "massage");
