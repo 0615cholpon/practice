@@ -12,24 +12,21 @@ public class PasswordValidator {
 		int lowLetter= 0;
 		int digits = 0;
 		int spChars = 0;
-//		boolean upperCase=!password.eqauls(Cybertek.toLowerCase());
+
 		
 for(int i = 0; i < password.length(); i++) {
 if((password.charAt(i) >= 65 && password.charAt(i) <= 90) || 
 (password.charAt(i) >= 97 && password.charAt(i) <= 122) || (password.charAt(i) >= 48 && password.charAt(i) <= 57) ||
 (password.charAt(i) >= 33 && password.charAt(i) <= 47 && password.charAt(i) >= 58 && password.charAt(i) <= 64 &&
 password.charAt(i) >= 92 && password.charAt(i) <= 96 && password.charAt(i) >= 123 && password.charAt(i) <= 126)) {
-	
-}	
-System.out.println("Password is accepted");
-
-if(password.charAt(i) >= 65 && password.charAt(i) <= 90) {
-	//capLetter++;
 }
-//if(password.charAt(i) >= 97 && password.charAt(i) <= 122) {
-//	lowLetter++;
+if(password.charAt(i) >= 65 && password.charAt(i) <= 90) {
+	capLetter++;
+}
+if(password.charAt(i) >= 97 && password.charAt(i) <= 122) {
+	lowLetter++;
 	
-//}
+}
 if(password.charAt(i) >= 48 && password.charAt(i) <= 57) {
 	digits++;
 }
@@ -38,19 +35,18 @@ password.charAt(i) >= 92 && password.charAt(i) <= 96 && password.charAt(i) >= 12
 	spChars++;
 	
 }
-
-
+	System.out.println("Password is accepted");
 	}
 
 if(length < 8) {
 	System.out.println("Password should contain minimum 8 characters");
 }
-//if(capLetter < 1) {
+if(capLetter < 1) {
 	System.out.println("Password should contain at least 1 uppercase letter");
-//}
-//if(lowLetter < 1) {
+}
+if(lowLetter < 1) {
 	System.out.println("Password should contain at least 1 lowercase letter");
-//}
+}
 if(digits < 1) {
 	System.out.println("Password should contain at least 1 digit");
 }

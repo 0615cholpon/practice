@@ -9,7 +9,7 @@ public class StoreStsinArray {
 	
 		public static void main(String[] args) throws FileNotFoundException {
 		
-			File file = new File("test.txt");
+			File file = new File("charAandB.txt");
 			Scanner sc=new Scanner(file);
 			String result = "";
 			while(sc.hasNextLine()){  

@@ -10,8 +10,8 @@ public class PalindromeWhLoop {
 //		for(int i = word.length() -1; i >= 0; i--) {
 //			check.append(word.charAt(i));
 //		}
-//		String test = check.toString();
-//		if(test.equals(word)) {
+//		String charAandB = check.toString();
+//		if(charAandB.equals(word)) {
 //			return true;
 //		}else {
 //			return false;

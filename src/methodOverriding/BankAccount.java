@@ -18,7 +18,7 @@ public class BankAccount {
 		balance -= amount;
 		double fee = amount/10;
 		balance -= fee;
-		System.out.println(amount + " is transffered successfully with fee " + fee);
+		System.out.println(amount + " is transfered successfully with fee " + fee);
 	}
 	
 	public void deposit(double addition) {

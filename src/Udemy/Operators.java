@@ -2,6 +2,7 @@ package Udemy;
 
 public class Operators {
 	public static void main(String[] args) {
+
 //		double var1 = 20.00;
 //		double var2 = 80.00;
 //		System.out.println("Here is the variables: " + var1 + " and " + var2);
