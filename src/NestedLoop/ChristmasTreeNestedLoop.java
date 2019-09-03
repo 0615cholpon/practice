@@ -7,6 +7,7 @@ public class ChristmasTreeNestedLoop {
 				System.out.print("*");	
 			}
 			System.out.println();
+			System.out.println("Hello world");
 		
 		}
 	}
